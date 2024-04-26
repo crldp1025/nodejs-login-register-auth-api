@@ -14,6 +14,7 @@ const port = 3000;
 const url: string = process.env.MONGO_DB_URL as string;
 
 app.use(cors({
+  origin: true,
   credentials: true
 }));
 
